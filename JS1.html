@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--<script>
+        let d = new Date();
+        alert ("Today's date is" + d);
+  </script> -->
+	<style>
+		.block {
+			width: 150px;
+			height: 250px;
+			background-color: red;
+		}
+    .hidden {
+			display: none;
+		} 
+	</style>
+</head>
+
+<body>
+	<div class="block hidden" id="id"></div>
+	<p><button onclick="a1()">Привет</button></p>
+
+	<script>
+	function a1() {
+		let element = document.getElementById("id");
+		element.classList.toggle("hidden");
+
+	}
+		
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<style>
+  div {
+    margin-bottom: 30px;
+  }
+
+  #menu1 {
+    font-family: Arial;
+    font-size: 10pt;
+    color: blue;
+  }
+
+  #menu1 a:link,
+  #menu1 a:visited {
+    color: blue;
+    text-decoration: none;
+  }
+
+  #menu1 a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  #menu1 li {
+    margin-bottom: 5px;
+  }
+
+  #menu2 {
+    font-family: Arial;
+    font-size: 10pt;
+    width: 200px;
+    color: blue;
+  }
+
+  #menu2 a {
+    display: block;
+
+  }
+
+  #menu2 a:link,
+  #menu2 a:visited {
+    color: blue;
+    text-decoration: none;
+  }
+
+  #menu2 a:hover {
+    color: blue;
+    font-family: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #menu2 li {
+    margin-bottom: 5px;
+    list-style-type: none;
+    border: 1px solid blue;
+    padding: 0px 5px;
+    line-height: 30px;
+  }
+
+  #menu3 {
+    font-family: Arial;
+    font-size: 12pt;
+    width: 200px;
+    color: #484848;
+  }
+
+  #menu3 a {
+    display: block;
+    padding: 0px 5px;
+    border: 1px solid #484848;
+  }
+
+  #menu3 a:link,
+  #menu3 a:visited {
+    color: white;
+    background-color: #484848;
+    text-decoration: none;
+  }
+
+  #menu3 a:hover {
+    color: #484848;
+    background-color: white;
+  }
+
+  #menu3 li {
+    margin-bottom: 5px;
+    list-style-type: none;
+    line-height: 30px;
+    border: 1px soli #484848;
+  }
+
+  #menu4 {
+    font-family: Arial;
+    width: 200px;
+    font-size: 10pt;
+    color: blue;
+  }
+
+  #menu4 a {
+    display: block;
+    padding: 0px 5px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+  }
+
+  #menu4 a:hover,
+  #menu4 a.active {
+
+    color: blue;
+    background: white url("blue.png") no-repeat 90% center;
+    text-decoration: none;
+    font-family: 14pt;
+    font-weight: bold;
+  }
+
+
+  #menu4 li {
+    margin-bottom: 5px;
+    list-style-type: none;
+    line-height: 30px;
+    border: 1px solid blue;
+
+  }
+
+  #menu4 ul {
+    padding: 0px;
+  }
+
+  #menu5 {
+    font-family: Arial;
+    font-size: 10pt;
+    color: blue;
+  }
+
+  #menu5 a {
+    display: block;
+    width: 100px;
+  }
+
+  #menu5 a:link {
+    color: blue;
+    text-decoration: none;
+  }
+
+  #menu5 a:link,
+  #menu5 a:visited {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  #menu5 a:hover {
+    color: white;
+    background-color: #484848;
+    text-decoration: none;
+  }
+
+  #menu5 li {
+    display: inline-block;
+    line-height: 25px;
+    border: 1px solid blue;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  #menu6 {
+    font-family: Arial;
+    font-size: 10pt;
+    color: blue;
+  }
+
+  #menu6 a {
+    display: block;
+    width: 100px;
+  }
+
+  #menu6 a:link {
+    color: blue;
+    text-decoration: none;
+  }
+
+  #menu6 a:link,
+  #menu6 a:visited {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  #menu6 a:hover,
+  #menu6 a.active {
+    color: white;
+    background-color: #484848;
+    text-decoration: none;
+  }
+
+  #menu6 li {
+    float: left;
+    line-height: 25px;
+    border: 1px solid blue;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  #li1 {
+    background: url("1.png") no-repeat top center;
+  }
+
+  #li1:hover {
+    background: url("1-h.png") no-repeat top center;
+  }
+
+  #li2 {
+    background: url("2.png") no-repeat top center;
+  }
+
+  #li2:hover {
+    background: url("2-h.png") no-repeat top center;
+  }
+
+  #li3 {
+    background: url("3.png") no-repeat top center;
+  }
+
+  #li3:hover {
+    background: url("3-h.png") no-repeat top center;
+  }
+
+  #li4 {
+    background: url("4.png") no-repeat top center;
+  }
+
+  #li4:hover {
+    background: url("4-h.png") no-repeat top center;
+  }
+
+  #li5 {
+    background: url("5.png") no-repeat top center;
+  }
+
+  #li5:hover {
+    background: url("5-h.png") no-repeat top center;
+  }
+
+  #menu7 {
+    font-family: Arial;
+    font-size: 10pt;
+    color: blue;
+    text-align: center;
+  }
+
+  #menu7 a {
+    display: block;
+    width: 100px;
+    background-color: gray;
+    padding-top: 35px;
+    min-width: 80px;
+  }
+
+  #menu7 a:link {
+    color: blue;
+    text-decoration: none;
+  }
+
+  #menu7 a:link,
+  #menu7 a:visited {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  #menu7 a:hover {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  #menu7 li {
+    display: inline-block;
+    line-height: 25px;
+
+    list-style-type: none;
+    text-align: center;
+    margin-right: 10px;
+  }
+</style>
+
+<body>
+  <div id="menu1">
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Контакты</a></li>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Как добраться</a></li>
+    </ul>
+  </div>
+
+  <div id="menu2">
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Контакты</a></li>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Как добраться</a></li>
+    </ul>
+  </div>
+
+  <div id="menu3">
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Контакты</a></li>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Как добраться</a></li>
+    </ul>
+  </div>
+
+  <div id="menu4">
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="" class="active">Новости</a></li>
+      <li><a href="">Контакты</a></li>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Как добраться</a></li>
+    </ul>
+  </div>
+
+  <div id="menu5">
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="" class="active">Новости</a></li>
+      <li><a href="">Контакты</a></li>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Как добраться</a></li>
+    </ul>
+  </div>
+
+  <div id="menu6">
+    <ul>
+      <li><a href="">Главная</a></li>
+      <li><a href="" class="active">Новости</a></li>
+      <li><a href="">Контакты</a></li>
+      <li><a href="">О компании</a></li>
+      <li><a href="">Как добраться</a></li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+
+  <div id="menu7">
+    <ul>
+      <li><a href="" id="li1">Авиабилеты</a></li>
+      <li><a href="" id="li2" class="active">Чартеры</a></li>
+      <li><a href="" id="li3">Ж/д билеты</a></li>
+      <li><a href="" id="li4">Гостинницы</a></li>
+      <li><a href="" id="li5">ТУризм</a></li>
+    </ul>
+  </div>
+
+</body>

@@ -1,0 +1,25 @@
+.wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+}
+.red {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 150px;
+    background-color: red;
+}
+.green {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 150px;
+    background-color: green;
+}

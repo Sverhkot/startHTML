@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link>
+  <script>
+    $(document).ready(function () {
+      $(".buttonAlert").on("click", function (event) {
+        alert($(".enter").val());
+        $(".enter").val("");
+      });
+
+      $(".buttonConsole").on("click", function (event) {
+        console.log($(".enter").val());
+        $(".enter").val("");
+      });
+
+      $(".buttonHTML").on("click", function (event) {
+        $(".output-span").html($(".enter").val());
+        $(".enter").val("");
+      })
+
+    });
+
+  </script>
+</head>
+<style>
+  
+  .enter {
+    width: 510px;
+    margin: 20px;
+  }
+  .styleButton {
+    margin: 20px;
+  }
+  
+</style>
+
+<body>
+  <div class="output">
+    
+    <input type="text" class="form-control enter" placeholder="Напиши что-нибудь">
+   
+    <button type="button" class="btn btn-outline-secondary buttonAlert styleButton">Вывод в alert</button>
+    
+    <button type="button" class="btn btn-outline-secondary buttonConsole styleButton">Вывод в консоль</button>
+   
+    <button type="button" class="btn btn-outline-secondary buttonHTML styleButton">Вывод в элемент</button>
+  <p>Вывод:</p>
+
+  <span class="output-span"></span>
+
+</body>
+
+</html>

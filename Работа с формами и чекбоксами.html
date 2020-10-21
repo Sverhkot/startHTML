@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $( document ).ready(function() {
+        $( ".buttonAlert" ).on( "click", function( event ) {
+          alert($(".enter").val());
+          $(".enter").val("");
+        });
+
+        $(".buttonConsole").on("click", function( event ) {
+            console.log($(".enter").val());
+            $(".enter").val("");
+        });
+
+        $(".buttonHTML").on("click", function(event) {
+            $(".output-span").html($(".enter").val());
+            $(".enter").val("");
+        })
+
+      });
+
+    </script>
+</head>
+<style>
+    .buttonAdd {
+        width: 100px;
+        height: 40px;
+        display: block;
+    margin-left: auto;
+    margin-right: auto
+       
+    }
+    .enter{
+        width: 150px;
+        height: 30px;
+        display: block;
+    margin-left: auto;
+    margin-right: auto
+        
+    }
+    .output{
+        background-color: rgba(215, 175, 253, 0.644);
+        width: 500px;
+        position: relative;
+        margin: auto;
+    }
+</style>
+<body>
+  <div class="output">
+    <br><br>
+    <input type="text" class="enter">
+    <br><br>
+    <button class="buttonAdd buttonAlert">Вывод через alert</button>
+    <br><br>
+    <button class="buttonAdd buttonConsole">Вывод в консоль</button>
+    <br><br>
+    <button class="buttonAdd buttonHTML">Вывод в элемент</button>
+    <br><br>
+</div>
+<p>Вывод:</p>
+
+<span class="output-span"></span>
+
+</body>
+</html>

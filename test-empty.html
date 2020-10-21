@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="test"></div>
+    <script>
+      function fact(n) {
+        if (n == 1) {
+          return 1;
+        } else {
+          return n * fact(n - 1)
+        };
+      }
+      
+      document.getElementById("test").innerHTML = fact(5);
+    </script>
+   
+  </body>
+</html>

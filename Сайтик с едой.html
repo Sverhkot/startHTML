@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link>
+  <link href="ЯВЕГАН.css" rel="stylesheet">
+</head>
+<style>
+  /*.logo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .main-menu {
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 45px;
+  }
+
+  .smallMenu {
+    margin: auto;
+    width: 800px;
+    height: 51px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    font-size: 23px;
+  }
+
+  .nav-link {
+    color: black;
+    margin-left: 12px;
+  }
+
+  .nav-link:hover {
+    color: rgb(2, 156, 54);
+  }
+
+  .wrapper {
+    width: 800px;
+
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  .card {
+    display: inline
+  }
+
+  img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .myFlexBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93%;
+  }*/
+</style>
+
+<body>
+  <div class="main-menu">
+    <nav class="navbar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLwXkbCefS-PufgS9k5zrXYj4o0o5N5skMqA&usqp=CAU"
+        class="logo"></img>
+      <div class="myFlexBlock">
+        <h1 class="navbar-brand" href="#">ЯВЕГАН.COM</h1>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 btnSearch" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+  </div>
+  </div>
+
+  <div class="smallMenu">
+    <ul class="nav nav-tabs ">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Идеи</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Сайтик с едой (вкладака завтрак).html">Завтрак</a>
+          <a class="dropdown-item" href="#">Обед</a>
+          <a class="dropdown-item" href="#">Ужин</a>
+          <a class="dropdown-item" href="#">Полезный перекус</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="Сайтик с едой.html">Блюдо дня</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Сайтик с едой (вкладка Интересные факты).html">Мемы</a>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="card col-sm-6" style="width: 18rem;">
+          <img src="https://www.gastronom.ru/binfiles/images/20160830/b975c46a.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Традиционное блюдо итальянской кухни - ризотто с лисичками</h5>
+            <p class="card-text">Готовить это блюдо очень легко...</p>
+            <a href="#" class="btn btn-outline-success">Хочу рецепт!</a>
+          </div>
+        </div>
+
+        <div class="card col-sm-6" style="width: 18rem;">
+          <img
+            src="https://foodandmood.com.ua/i/81/89/56/818956/image_main/0c1766c7bce9fab02cce377c46f56dfe-quality_75Xresize_crop_1Xallow_enlarge_0Xw_740Xh_493.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Классический крем-суп из чечевицы по-турецки</h5>
+            <p class="card-text">Этот суп вкуснее всех прочих прежде всего потому, что там есть...</p>
+            <a href="#" class="btn btn-outline-success">Хочу рецепт!</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<style>
+
+	#wrapper {
+		width: 900px;
+		margin: 0px auto;
+	}
+
+	#header {
+		outline: 1px solid black;
+		height: 200px;
+	}
+
+	#sidebar {
+		outline: 1px solid black;
+		width: 200px;
+		height: 400px;
+		float: left;
+	}
+
+	#content {
+		outline: 1px solid black;
+		width: 700px;
+		height: 400px;
+		float: left;
+	}
+
+	#footer {
+		outline: 1px solid black;
+		height: 200px;
+	}
+
+	.clearfix {
+		clear: both;
+	}
+</style>
+
+<body>
+	<div id="wrapper">
+    <div id="header">header</div>
+    <div id="content">content</div>
+	<div id="sidebar">sidebar</div>
+	<div class="clearfix"></div>
+	<div id="footer">footer</div>
+</div>
+</body>
+</html>

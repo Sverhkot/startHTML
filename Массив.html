@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<body>
+	<p id="out1"></p>
+<script>
+
+	let out = document.getElementById("out1");
+	let i = 0;
+  let m = [];
+
+  while (i < 5) {
+    m[i] = +prompt("введите m [" + i + "]");
+    i = i + 1;
+  }
+  i = 0;
+  let g = 50;
+  let n = 0;
+  
+  while (i < 5){
+    a = g-m[i];
+    i = i + 1;
+     while (a >= 0) {
+       a = a - m[i]
+       i = i + 1 
+     }
+     n = n + 1;
+     i = i - 1;
+  }
+  // alert("Вам потребуется " + n + " кораблей")
+
+  out.innerHTML = "Вам потребуется " + n + " кораблей"
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+
+  p {
+  	text-indent: 15px;
+  	text-align: justify;
+  }
+  #list, #list2 {
+  	border-width: 2px;
+  	border-style: dotted;
+  	border-color: red;
+  	width: 500px;
+  	height: 150px;
+  	text-align: left;
+  	border-radius: 10px;
+  }
+
+  .border-left {
+  	border-left: 2px solid blue;
+  }
+
+ /*a:link {
+	color: red;
+}
+a:visited {
+	color: red;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: red;
+}*/
+
+
+a:link.www, a:link.eee {
+	color: blue;
+	text-decoration: underline;
+}
+a:visited.www, a:visited.eee{
+	color: red;
+}
+a:hover.www, a:hover.eee {
+	text-decoration: none;
+	color: yellow;
+}
+.underline{
+	text-decoration: underline
+}
+.overline {
+	text-decoration: overline;
+}
+.line-through {
+	text-decoration: line-through;
+}
+ .redborder {
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: red;
+  	width: 250px;
+  	height: 250px;
+}
+.blueborder {
+	border-width: 1px;
+  	border-style: dotted;
+  	border-color: blue;
+  	width: 600px;
+  	height: 300px;
+}
+.greenborder {
+	border-width: 1px;
+  	border-style: dashed;
+  	border-color: green;
+  	width: 100px;
+  	height: 100px;
+}
+.rainbowborder {
+  	width: 600px;
+  	height: 200px;
+  	border-left: 1px solid green;
+  	border-top: 1px solid blue;
+  	border-right: 1px solid green;
+  	border-bottom: 1px solid red;
+  	border-radius: 20px;
+}
+.greenborder2 {
+	border-width: 1px;
+  	border-style: dotted;
+  	border-color: green;
+  	width: 300px;
+  	height: 300px;
+  	border-radius: 15px 35px 60px 80px;
+}
+.redring {
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: red;
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 100px;
+}
+
+a:link.blue {
+	color: blue;
+	text-decoration:none;
+}
+a:visited.blue {
+	color: blue;
+}
+a:hover.blue {
+	color: green;
+	text-decoration: underline;
+}
+a:link.red {
+	color: red;
+	text-decoration: underline;
+}
+a:visited.red {
+	color: red;
+}
+a:hover.red{
+	color: blue;
+	text-decoration: line-through;
+}
+a:link.black{
+	color:black;
+}
+a:visited.black {
+	color: black;
+}
+a:hover.black {
+	color: red;
+	text-decoration: overline;
+}
+
+</style>
+
+<body>
+
+	<h1>Основы работы со ссылками и границами</h1>
+
+	  <p>В данном уроке мы с вами продолжим изучать различные CSS свойства.</p>
+
+	<h2>Блок №2. Свойство text-decoration</h2>
+
+	  <p>Свойство <b>text-decoration</b> позволяет задавать некоторые эффекты для текста: подчеркивание, перечеркивание, линию сверху, а также отменять такие эффекты, если какой-либо тег имеет их по умолчанию.</p>
+
+      <p>Чаще всего это свойство используются для отмены подчеркивания ссылок (они по умолчанию подчеркнуты).</p>
+
+      <p>Давайте посмотрим, какие значения может принимать свойство <b> text-decoration:</b></p>
+    <div id="list">
+    <ul>
+    	<li>Значение <b>underline</b> добавляет подчеркивание тексту</li>
+    	<li>Значение <b>overline</b> добавляет линию над текстом </li>
+    	<li>Значение <b>line-through</b> добавляет линию, перечеркивающую текст</li>
+    	<li>Значение <b>none</b> отменяет все эффекты, обычно используется для отмены подчеркивания ссылок</li>
+    </ul>
+    </div>
+
+    <h2>Блок №2. Состояния ссылок</h2>
+    <p>Я думаю, что вы, посещая различные сайты в интернете, обращали внимание на то, что ссылки обычно реагируют на наведение мышкой на них. Такого эффекта можно добиться, задавая поведение ссылок в различных состояниях.</p>
+
+    <p>К примеру, вот так:</p>
+    <div id="list2">
+    <ul>
+    	<li><b>a:hover</b> - отлавливает состояние, когда на ссылку навели курсор мышки. В этот момент мы можем, к примеру, поменять цвет ссылки или убрать/добавить ей подчеркивание.</li>
+
+       <li> <b>:link</b> отлавливает не посещенную ссылку</li> 
+       <li> <b>:visited</b> отлавливает посещенную ссылку.</li>
+       <li><b>:active</b> - отлавливает следующее состояние: на элемент нажали мышкой, но еще не отпустили.</li>
+    </ul>
+    </div>
+
+    <p>На некоторых сайтах с их помощью показывают пользователям, где они были, а где - нет.</p>
+
+    <p>Псевдоклассы наследуют друг от друга. К примеру, если я уберу подчеркивание для состояния :link, то оно уберется для всех состояний.</p>
+
+    <p class="border-left">Из-за наследования для корректной работы данные псевдоклассы следует размещать именно в таком порядке, как в примере: :link, :visited, :hover, :active (ненужные можно не писать). Этот порядок подчиняется следующему мнемоническому правилу: <b>LoVe HAte</b>.</p>
+
+    <p>Часто состояния <b>:link</b> и <b>:visited</b> объединяют вместе через запятую</p>
+
+    <h2>Задание 1 на состояние ссылки</h2>
+    
+    <div id="test">
+    <a href="#" class="www">ссылка</a>
+    <a href="#" class="eee">ссылка 2</a>
+    </div>
+
+    <h2>Задание 2 На text-decoration</h2>
+
+    <p class="underline">Привет, мир!</p>
+    <p class="line-through">Привет, мир!</p>
+    <p class="overline">Привет, мир!</p>
+
+    <h2>На гарницы</h2>
+
+   <div class="redborder"></div>
+   <br>
+   <div class="blueborder"></div>
+   <br>
+   <div class="greenborder"></div>
+   <br>
+   <div class="rainbowborder"></div>
+   <br>
+   <div class="greenborder2"></div>
+   <br>
+   <div class="redring"></div>
+   <h2>На ссылки</h2>
+   <a href="#" class="blue">ссылка1</a>
+   <a href="#" class="red">ссылка2</a>
+   <a href="#"class="black">ссылка3</a>
+
+</body>
+</html>

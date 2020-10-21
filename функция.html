@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Just a Generic Page</title>
+  
+  <script>
+    let radius = -5.2;
+    function calculateArea(r) {
+      let area;
+      if (r <= 0) {
+        return 0;
+      } else {
+        area = Math.PI * r * r;
+        return area;
+      }
+    }
+
+    let theArea = calculateArea(radius);
+    console.log("The area is: " + theArea);
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
